@@ -5,9 +5,10 @@ import { Header } from "./Header";
 import { MovieCard } from "./MovieCard";
 
 interface ContentProps {
-  movies: MovieProps[],
-  selectedGenre: GenreResponseProps
+  movies: MovieProps[];
+  selectedGenre: GenreResponseProps;
 }
+
 export function Content(props: ContentProps) {
   return (
     <div className="container">
@@ -20,5 +21,5 @@ export function Content(props: ContentProps) {
         </div>
       </main>
     </div>
-  )
+  );
 }

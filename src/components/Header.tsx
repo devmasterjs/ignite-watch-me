@@ -1,7 +1,7 @@
 import '../styles/header.scss';
 
 interface HeaderProps {
-  title: string
+  title: string;
 }
 
 export function Header(props: HeaderProps) {
@@ -9,5 +9,5 @@ export function Header(props: HeaderProps) {
     <header>
       <span className="category">Categoria:<span> {props.title}</span></span>
     </header>
-  )
+  );
 }
