@@ -3,7 +3,7 @@ import '../styles/sidebar.scss';
 import { Button } from './Button';
 
 interface SideBarProps {
-  genres: GenreResponseProps[],
+  genresList: GenreResponseProps[],
   handleClickButton: (id:number) => void,
   selectedGenreId: number;
 }
@@ -13,7 +13,7 @@ export function SideBar(props:SideBarProps) {
     <nav className="sidebar">
       <span>Watch<p>Me</p></span>
       <div className="buttons-container">
-        {props.genres.map(genre => (
+        {props.genresList.map(genre => (
           <Button
             key={String(genre.id)}
             title={genre.title}
