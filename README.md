@@ -30,6 +30,43 @@ yarn server
 Perceba que ele iniciou uma fake API com os recursos /genres e /movies em localhost na porta 3333 a partir das informações do arquivo server.json localizado na raiz do seu projeto. 
 Acessando essas rotas no seu navegador, você consegue ver o retorno das informações no formato JSON.
 
+```bash
+yarn run v1.22.5
+$ json-server server.json --port 3333
+
+  \{^_^}/ hi!
+
+  Loading server.json
+  Done
+
+  Resources
+  http://localhost:3333/genres
+  http://localhost:3333/movies
+
+  Home
+  http://localhost:3333
+
+  Type s + enter at any time to create a snapshot of the database
+```
+
 Dessa forma, basta consumir essas rotas da API normalmente com o Axios. 
 Caso queira estudar mais sobre o **JSON Server**, acesse este link: [typicode/json-server](https://github.com/typicode/json-server)
 
+Instalação do projeto em ambiente local
+Após clocar no repositório, execute um dos comandos abaixo para instalar as dependências:
+
+## Instalação do projeto em ambiente local
+
+Após clocar no repositório, execute um dos comandos abaixo para instalar as dependências:
+
+```bash
+yarn install
+```
+
+## Execução do projeto em ambiente local
+
+Para executar a aplicação, execute um dos comandos abaixo:
+
+```bash
+yarn dev
+```
