@@ -1,6 +1,7 @@
 import { GenreResponseProps } from "../interfaces/GenreResponseProps";
 import { MovieProps } from "../interfaces/MovieProps";
 import '../styles/content.scss';
+import { Header } from "./Header";
 import { MovieCard } from "./MovieCard";
 
 interface ContentProps {
@@ -10,9 +11,7 @@ interface ContentProps {
 export function Content(props: ContentProps) {
   return (
     <div className="container">
-      <header>
-        <span className="category">Categoria:<span> {props.selectedGenre.title}</span></span>
-      </header>
+      <Header title={props.selectedGenre.title} />
       <main>
         <div className="movies-list">
           {props.movies.map(movie => (
